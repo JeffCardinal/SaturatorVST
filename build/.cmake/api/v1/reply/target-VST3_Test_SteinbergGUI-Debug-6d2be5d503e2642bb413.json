@@ -1,0 +1,571 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "VST3/Debug/VST3_Test_SteinbergGUI.vst3/Contents/MacOS/VST3_Test_SteinbergGUI"
+		}
+	],
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"smtg_add_vst3plugin_with_pkgname",
+			"smtg_add_vst3plugin",
+			"target_link_libraries",
+			"smtg_target_make_plugin_package",
+			"smtg_enable_vstgui_support",
+			"add_custom_command",
+			"smtg_target_run_vst_validator",
+			"smtg_target_create_module_info_file",
+			"add_compile_options",
+			"smtg_setup_platform_toolset",
+			"smtg_enable_vst3_sdk",
+			"target_include_directories",
+			"smtg_target_configure_version_file",
+			"target_sources",
+			"smtg_target_add_library_main",
+			"smtg_target_add_plugin_resource",
+			"smtg_target_add_plugin_snapshots"
+		],
+		"files" : 
+		[
+			"/Users/jeff/workspace/steinberg/VST_SDK/vst3sdk/cmake/modules/SMTG_AddVST3Library.cmake",
+			"CMakeLists.txt",
+			"/Users/jeff/workspace/steinberg/VST_SDK/vst3sdk/cmake/modules/SMTG_AddSMTGLibrary.cmake",
+			"/Users/jeff/workspace/steinberg/VST_SDK/vst3sdk/cmake/modules/SMTG_VstGuiSupport.cmake",
+			"/Users/jeff/workspace/steinberg/VST_SDK/vst3sdk/CMakeLists.txt",
+			"/Users/jeff/workspace/steinberg/VST_SDK/vst3sdk/vstgui4/vstgui/lib/CMakeLists.txt",
+			"/Users/jeff/workspace/steinberg/VST_SDK/vst3sdk/vstgui4/vstgui/uidescription/CMakeLists.txt",
+			"/Users/jeff/workspace/steinberg/VST_SDK/vst3sdk/public.sdk/CMakeLists.txt",
+			"/Users/jeff/workspace/steinberg/VST_SDK/vst3sdk/cmake/modules/SMTG_PlatformToolset.cmake",
+			"/Users/jeff/workspace/steinberg/VST_SDK/vst3sdk/cmake/modules/SMTG_Global.cmake",
+			"/Users/jeff/workspace/steinberg/VST_SDK/vst3sdk/cmake/modules/SMTG_Bundle.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 26,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 247,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 168,
+				"parent" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 171,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 318,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 43,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 60,
+				"parent" : 0
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 4,
+				"line" : 42,
+				"parent" : 8
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 93,
+				"parent" : 9
+			},
+			{
+				"file" : 5
+			},
+			{
+				"command" : 3,
+				"file" : 5,
+				"line" : 378,
+				"parent" : 11
+			},
+			{
+				"file" : 6
+			},
+			{
+				"command" : 3,
+				"file" : 6,
+				"line" : 214,
+				"parent" : 13
+			},
+			{
+				"file" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 7,
+				"line" : 140,
+				"parent" : 15
+			},
+			{
+				"command" : 3,
+				"file" : 7,
+				"line" : 47,
+				"parent" : 15
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 197,
+				"parent" : 2
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 39,
+				"parent" : 18
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 2
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 89,
+				"parent" : 20
+			},
+			{
+				"command" : 11,
+				"file" : 1,
+				"line" : 24,
+				"parent" : 0
+			},
+			{
+				"command" : 10,
+				"file" : 9,
+				"line" : 31,
+				"parent" : 22
+			},
+			{
+				"command" : 9,
+				"file" : 8,
+				"line" : 11,
+				"parent" : 23
+			},
+			{
+				"command" : 9,
+				"file" : 8,
+				"line" : 17,
+				"parent" : 23
+			},
+			{
+				"command" : 13,
+				"file" : 1,
+				"line" : 65,
+				"parent" : 0
+			},
+			{
+				"command" : 12,
+				"file" : 10,
+				"line" : 158,
+				"parent" : 26
+			},
+			{
+				"command" : 15,
+				"file" : 2,
+				"line" : 275,
+				"parent" : 4
+			},
+			{
+				"command" : 14,
+				"file" : 2,
+				"line" : 172,
+				"parent" : 28
+			},
+			{
+				"command" : 14,
+				"file" : 1,
+				"line" : 39,
+				"parent" : 0
+			},
+			{
+				"command" : 17,
+				"file" : 1,
+				"line" : 54,
+				"parent" : 0
+			},
+			{
+				"command" : 16,
+				"file" : 2,
+				"line" : 543,
+				"parent" : 31
+			},
+			{
+				"command" : 14,
+				"file" : 2,
+				"line" : 504,
+				"parent" : 32
+			},
+			{
+				"command" : 16,
+				"file" : 2,
+				"line" : 543,
+				"parent" : 31
+			},
+			{
+				"command" : 14,
+				"file" : 2,
+				"line" : 504,
+				"parent" : 34
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -stdlib=libc++ -g -std=gnu++17 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk -mmacosx-version-min=10.13 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden"
+				},
+				{
+					"backtrace" : 24,
+					"fragment" : "-DSMTG_RENAME_ASSERT=1"
+				},
+				{
+					"backtrace" : 25,
+					"fragment" : "-fcolor-diagnostics"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-DDEVELOPMENT=1"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-stdlib=libc++"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "VST3_Test_SteinbergGUI_EXPORTS"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "VSTGUI_ENABLE_DEPRECATED_METHODS=1"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "VSTGUI_LIVE_EDITING"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 27,
+					"path" : "/Users/jeff/workspace/steinberg/MyVSTPlugins/VST3-Test-SteinbergGUI/build"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/jeff/workspace/steinberg/VST_SDK/vst3sdk/vstgui4"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/jeff/workspace/steinberg/VST_SDK/vst3sdk/base/.."
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/Users/jeff/workspace/steinberg/VST_SDK/vst3sdk/public.sdk/.."
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/Users/jeff/workspace/steinberg/VST_SDK/vst3sdk/pluginterfaces/.."
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					6
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				4,
+				6,
+				7,
+				8
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 6,
+			"id" : "vstgui_support::@84df0381bbe72cab14f2"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "vstgui::@54a0746fa10a39fdb5d0"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "vstgui_uidescription::@119a8cbf1440fab7ca2b"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "pluginterfaces::@0e710dd5baaf1ba5f04c"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "base::@0735951bbe0919745031"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "sdk_common::@cd6fd055087e8e969d30"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "sdk::@cd6fd055087e8e969d30"
+		},
+		{
+			"backtrace" : 19,
+			"id" : "validator::@cb6a5f45744856ded658"
+		},
+		{
+			"backtrace" : 21,
+			"id" : "moduleinfotool::@0ccd92616ad435ec5cfd"
+		}
+	],
+	"id" : "VST3_Test_SteinbergGUI::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lc++",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "-framework CoreFoundation",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "lib/Debug/libvstgui_support.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "lib/Debug/libsdk.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "lib/Debug/libvstgui.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "-framework Cocoa",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "-framework QuartzCore",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "-framework Accelerate",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "-framework OpenGL",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "lib/Debug/libvstgui_uidescription.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/lib/libexpat.tbd",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 16,
+				"fragment" : "lib/Debug/libsdk_common.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "lib/Debug/libbase.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 17,
+				"fragment" : "lib/Debug/libpluginterfaces.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lc++",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "VST3_Test_SteinbergGUI",
+	"nameOnDisk" : "VST3_Test_SteinbergGUI.vst3/Contents/MacOS/VST3_Test_SteinbergGUI",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				5
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				4,
+				6,
+				7,
+				8
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				9
+			]
+		},
+		{
+			"name" : "Resources",
+			"sourceIndexes" : 
+			[
+				10,
+				11
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"path" : "source/version.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"path" : "source/params.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"path" : "source/cids.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"path" : "source/processor.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "source/processor.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "source/controller.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "source/controller.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "source/entry.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 29,
+			"compileGroupIndex" : 0,
+			"path" : "/Users/jeff/workspace/steinberg/VST_SDK/vst3sdk/public.sdk/source/main/macmain.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 30,
+			"path" : "resource/editor.uidesc",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 33,
+			"path" : "resource/A3495496703B52ED963D44B398141527_snapshot.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 35,
+			"path" : "resource/A3495496703B52ED963D44B398141527_snapshot_2.0x.png",
+			"sourceGroupIndex" : 3
+		}
+	],
+	"type" : "MODULE_LIBRARY"
+}

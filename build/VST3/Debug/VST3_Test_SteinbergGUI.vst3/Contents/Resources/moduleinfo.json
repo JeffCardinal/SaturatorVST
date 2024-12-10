@@ -1,0 +1,51 @@
+{
+  "Name": "VST3_Test_SteinbergGUI",
+  "Version": "1.0.0.0",
+  "Factory Info": {
+    "Vendor": "",
+    "URL": "",
+    "E-Mail": "mailto:",
+    "Flags": {
+      "Unicode": true,
+      "Classes Discardable": false,
+      "Component Non Discardable": false,
+    },
+  },
+  "Classes": [
+    {
+      "CID": "A3495496703B52ED963D44B398141527",
+      "Category": "Audio Module Class",
+      "Name": "VST3-Test-SteinbergGUI",
+      "Vendor": "",
+      "Version": "1.0.0.0",
+      "SDKVersion": "VST 3.7.12",
+      "Sub Categories": [
+        "Fx",
+      ],
+      "Class Flags": 1,
+      "Cardinality": 2147483647,
+      "Snapshots": [
+        {
+          "Scale Factor": 1,
+          "Path": "Contents/Resources/Snapshots/A3495496703B52ED963D44B398141527_snapshot.png",
+        },
+        {
+          "Scale Factor": 2,
+          "Path": "Contents/Resources/Snapshots/A3495496703B52ED963D44B398141527_snapshot_2.0x.png",
+        },
+      ],
+    },
+    {
+      "CID": "046F261351B05F9AAB742829D57EA30A",
+      "Category": "Component Controller Class",
+      "Name": "VST3-Test-SteinbergGUIController",
+      "Vendor": "",
+      "Version": "1.0.0.0",
+      "SDKVersion": "VST 3.7.12",
+      "Class Flags": 0,
+      "Cardinality": 2147483647,
+      "Snapshots": [
+      ],
+    },
+  ],
+}
