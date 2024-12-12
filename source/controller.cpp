@@ -27,11 +27,14 @@ tresult PLUGIN_API VST3_Test_SteinbergGUIController::initialize (FUnknown* conte
 	}
 
 	// Here you could register some parameters
-    parameters.addParameter(STR16("SmoothDriveV5LR"), nullptr, 0, 0.0, 
+    parameters.addParameter(STR16("Drive"), nullptr, 0, 0.0, 
 		Vst::ParameterInfo::kCanAutomate, kDriveId);
 
-	// parameters.addParameter(STR16("Shape"), nullptr, 0, 0.0, 
-	// 	Vst::ParameterInfo::kCanAutomate, kShapeId);
+	parameters.addParameter(STR16("Shape"), nullptr, 0, 0.0, 
+		Vst::ParameterInfo::kCanAutomate, kShapeId);
+
+	parameters.addParameter(STR16("Output"), nullptr, 0, 0.0, 
+		Vst::ParameterInfo::kCanAutomate, kOutputLevelId);
 
 	return result;
 }

@@ -12,4 +12,5 @@
 enum ParamId {
     kDriveId = 0,
     kShapeId = 1,
+    kOutputLevelId = 2,
 };

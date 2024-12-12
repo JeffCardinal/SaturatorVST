@@ -91,9 +91,12 @@ tresult PLUGIN_API VST3_Test_SteinbergGUIProcessor::process (Vst::ProcessData& d
     						// fDrive = driveSmoother.smooth(float(value));
 							break;
 						case kShapeId:
-							// fShapeTarget = float(value);
+							fShapeTarget = float(value);
 							// fShape = shapeSmoother.smooth(float(value));
 							break;
+						case kOutputLevelId:  // Output level knob parameter
+                            fOutputLevel = float(value);  // Get the output level value
+                            break;
 					}
 				}
 			}
@@ -108,29 +111,29 @@ tresult PLUGIN_API VST3_Test_SteinbergGUIProcessor::process (Vst::ProcessData& d
 			float* input = data.inputs[i].channelBuffers32[c];
 			float* output = data.outputs[i].channelBuffers32[c];
 
-			float& currentDrive = (c == 0) ? fDriveLeft : fDriveRight;  // Left/Right independent smoothing
+			memset(output, 0, data.numSamples * sizeof(float));
+
+			float& currentDrive = (c == 0) ? fDriveLeft : fDriveRight;
+			float& currentShape = (c == 0) ? fShapeLeft : fShapeRight;
 			float driveDelta = (fDriveTarget - currentDrive) / data.numSamples;
+			float shapeDelta = (fShapeTarget - currentShape) / data.numSamples;
 
 			for (int32 sample = 0; sample < data.numSamples; sample++) {
-
-				// float driveDelta = (fDriveTarget - fDrive) / data.numSamples;
-
-				// TODO: Figure out normalization later
-				// Get the normalized value (between 0.0 and 1.0)
-				// float normalizedValue = getNormalized(fDrive);
-				// float smoothed_fDrive = shapeSmoother.smooth(float(fDrive));
-				// float smoothed_fShape = shapeSmoother.smooth(float(fShape));
-				// float mapped_fDrive  = fDrive * 50.0f;
-				// float clamped_fDrive = std::clamp(mapped_fDrive, 0.0f, 50.0f);
-				// float scaledSample   = clamped_fDrive * input[sample];
-				// output[sample] = std::tanh(scaledSample * fShape) * (1.0f - fShape / 2.0f) + scaledSample * (fShape / 2.0f);
-				// for (int sample = 0; sample < data.numSamples; ++sample) {
-				// 	currentValue += parameterDelta; // Gradually approach targetValue
-				// 	output[sample] = std::tanh(currentValue * input[sample]);
-				// }
-
                 currentDrive += driveDelta;
-                output[sample] = std::tanh(currentDrive * 50.0f * input[sample]);
+                currentShape += shapeDelta;
+				
+				float outputGain = 10.0f * std::pow(10.0f, fOutputLevel * -36.0f / 20.0f);
+
+				if (currentDrive <= 0.05f) {
+					output[sample] = input[sample] * outputGain;
+				} else {
+					float scaledSample = currentDrive * 20.0f * input[sample];
+					// float waveshapedSample = std::tanh(scaledSample);
+					float sineShape = std::sin(currentShape * scaledSample);
+                	float waveshapedSample = sineShape;
+					float compensation = 1.0f / std::tanh(20.0f * 0.05f); // Is this right?
+					output[sample] = waveshapedSample * compensation * outputGain;
+				}
 			}
 		}
 	}

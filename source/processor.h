@@ -83,7 +83,10 @@ protected:
     float fDriveRight = 0.0f;
     float fDriveTarget;
 	float fShape;
+	float fShapeLeft = 0.0f;
+    float fShapeRight = 0.0f;
 	float fShapeTarget;
+	float fOutputLevel;
 	Smoother driveSmoother;
 	Smoother shapeSmoother;
 
