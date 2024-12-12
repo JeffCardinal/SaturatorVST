@@ -129,7 +129,7 @@ tresult PLUGIN_API VST3_Test_SteinbergGUIProcessor::process (Vst::ProcessData& d
 				} else {
 					float scaledSample = currentDrive * 20.0f * input[sample];
 					// float waveshapedSample = std::tanh(scaledSample);
-					float sineShape = std::sin(currentShape * scaledSample);
+					float sineShape = std::sin(currentShape * scaledSample); 
                 	float waveshapedSample = sineShape;
 					float compensation = 1.0f / std::tanh(20.0f * 0.05f); // Is this right?
 					output[sample] = waveshapedSample * compensation * outputGain;
